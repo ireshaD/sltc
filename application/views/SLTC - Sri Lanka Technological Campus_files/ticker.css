@@ -1,0 +1,12 @@
+.flex-ticker {
+	/*background: rgba(255,255,255,0.1);*/
+	border-radius: 5px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 10px;
+	width: 100%;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
