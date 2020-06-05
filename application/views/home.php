@@ -222,10 +222,10 @@
                                 if($value1->name=="Home"){
                                     $cls="active";
                                 }
-                                if($value1->manu_order==6 || $value1->manu_order==7){
+                                if($value1->menu_order==6 || $value1->menu_order==7){
                                     $cls=" reverse";
                                 }
-                                  if($value1->manu_order==2 || $value1->manu_order==6){
+                                  if($value1->menu_order==2 || $value1->menu_order==6){
                                     $ul_width="600px";
                                 }
                         ?>
@@ -233,7 +233,7 @@
                                     
                              <ul class="dropdown list-unstyled" style="min-width: <?=$ul_width?>;">
                                 <div class="row">
-                              <?php if($value1->manu_order==2 || $value1->manu_order==6){ ?>
+                              <?php if($value1->menu_order==2 || $value1->menu_order==6){ ?>
 
  <div class="col-sm-6">
                            <?php   }else{ ?>
@@ -263,8 +263,8 @@
                                             } ?>
 
                                      </li>       
-                                    <?php if(($value1->id==2 && $value2->manu_order==8 )
-                                    ||($value1->id==6 && $value2->manu_order==10 )) {  ?>
+                                    <?php if(($value1->id==2 && $value2->menu_order==8 )
+                                    ||($value1->id==6 && $value2->menu_order==10 )) {  ?>
                                     </div>
                                     <div class="col-sm-6">
                                     <?php

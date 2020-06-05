@@ -57,7 +57,7 @@ class Home_Controller extends CI_Controller {
                 }
 
                 foreach($img_data as $img){
-                    $img_array[$img->img_order]    =$img->img;
+                    $img_array[$img->img_order]    ='asserts/img/home/'.$img->img;
                     $img_url_array[$img->img_order]=$img->url;
                 }
         $this->data['manu1']    =$manu1;

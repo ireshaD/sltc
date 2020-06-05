@@ -25,8 +25,8 @@ class Home_model extends CI_Model{
     }    
     function get_manu1(){
         $this->db->select('*');
-        $this->db->from('manu_level1');
-        $this->db->order_by('manu_order','asc');
+        $this->db->from('menu_level1');
+        $this->db->order_by('menu_order','asc');
        
         $query = $this->db->get();
         if($query){
@@ -35,8 +35,8 @@ class Home_model extends CI_Model{
     }    
     function get_manu2(){
         $this->db->select('*');
-        $this->db->from('manu_level2');
-        $this->db->order_by('manu_order','asc');
+        $this->db->from('menu_level2');
+        $this->db->order_by('menu_order','asc');
        
         $query = $this->db->get();
         if($query){
@@ -45,8 +45,8 @@ class Home_model extends CI_Model{
     }
     function get_manu3(){
         $this->db->select('*');
-        $this->db->from('manu_level3');
-        $this->db->order_by('manu_order','asc');
+        $this->db->from('menu_level3');
+        $this->db->order_by('menu_order','asc');
        
         $query = $this->db->get();
         if($query){
